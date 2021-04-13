@@ -1,0 +1,20 @@
+const object = [
+  {name:'Jony Walker', birthDate:'1995-12-17'}, 
+  {name:'Andrew', birthDate: '2001-10-29'}, 
+  {name:'Viktor', birthDate:'1998-11-09'}, 
+  {name:'Andrew', birthDate:'2011-05-09'}
+];
+
+
+
+function searchByName(name) {
+  let res = [];
+  for (let i = 0; i < object.length; i++){ 
+    if (object[i].name === name) { 
+      res.push(object[i]);
+    }
+  }
+  return console.log(res);
+}
+
+searchByName('Viktor')
